@@ -27,3 +27,41 @@ p{
 img{
     width:100%; /* To keep images with in their container (100% of container)*/
 }
+.navbar{
+background-color: #047aed;
+color: #fff;
+height: 70px;
+
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;/*to centralize*/
+    overflow: auto;/*to get rid of margin-top */
+    padding: 0 40px;
+}
+.navbar .flex{
+    justify-content: space-between;/*space between is equally spaced*/
+}
+
+.flex{
+    display: flex;/*align row by row*/
+    /*flex-direction: column; ->align by column */
+    align-items: center;
+    height: 100%; /*height should be same as container" */
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar a{
+    color:#fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom:solid;
+    border-color: #fff;
+}
