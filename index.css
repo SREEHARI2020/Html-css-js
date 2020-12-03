@@ -27,21 +27,14 @@ p{
 img{
     width:100%; /* To keep images with in their container (100% of container)*/
 }
-.navbar{
-background-color: #047aed;
-color: #fff;
-height: 70px;
 
-}
 .container{
     max-width: 1100px;
     margin:0 auto;/*to centralize*/
     overflow: auto;/*to get rid of margin-top */
     padding: 0 40px;
 }
-.navbar .flex{
-    justify-content: space-between;/*space between is equally spaced*/
-}
+
 
 .flex{
     display: flex;/*align row by row*/
@@ -49,7 +42,13 @@ height: 70px;
     align-items: center;
     height: 100%; /*height should be same as container" */
 }
-
+/*navbar*/
+.navbar{
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+    
+    }
 .navbar ul{
     display: flex;
     
@@ -65,3 +64,91 @@ height: 70px;
     border-bottom:solid;
     border-color: #fff;
 }
+.navbar .flex{
+    justify-content: space-between;/*space between is equally spaced*/
+}
+/* showcase */
+.showcase{
+    height: 400px;
+    background-color: #047aed;
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+
+}
+.showcase p{
+    margin:20px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+}
+.showcase .grid{
+    grid-template-columns:55% 45%;
+    gap:30px;
+    overflow: visible;
+}
+.card{
+    background-color:#fff;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    padding:20px;
+    margin: 10px;
+    color: #333;
+}
+.showcase-form{
+    position: relative;
+     top:60px;
+   height: 350px;
+   width:400px;
+   padding: 40px;
+   z-index: 100;
+   justify-self:flex-end;
+
+}
+.showcase-form .form-control{
+    margin:30px 0;
+
+}
+.form-control input[type="text"],
+.form-control input[type="email"]{
+border:0px;
+border-bottom: 1px solid #b4becb;
+width: 100%;
+padding: 3px;
+font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+/* button */
+.btn{
+
+    display: inline block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:#047aed; 
+    color:#fff;
+    border:none;
+    border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
