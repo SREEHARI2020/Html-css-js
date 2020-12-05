@@ -480,3 +480,7 @@ code,pre{
         transform:translateX(0);
     }
 }
+.hidden{
+    visibility: hidden;
+    height: 0;
+}
