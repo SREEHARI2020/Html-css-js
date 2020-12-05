@@ -110,10 +110,12 @@ img{
    padding: 40px;
    z-index: 100;
    justify-self:flex-end;
+   animation:slideInFromRight 1s ease-in;
 
 }
 .showcase-form .form-control{
     margin:30px 0;
+  
 
 }
 .form-control input[type="text"],
@@ -126,6 +128,9 @@ font-size: 16px;
 }
 .showcase-form input:focus{
     outline: none;
+}
+.showcase-text{
+    animation:slideInFromLeft 1s ease-in;
 }
 /* button */
 .btn{
@@ -161,6 +166,7 @@ font-size: 16px;
 }
 .stats{
     padding-top:100px ;
+    animation:slideInFromBottom 1s ease-in;
 }
 .grid-3{
     grid-template-columns: repeat(3,1fr);
@@ -436,4 +442,41 @@ code,pre{
 }
 .text-primary{
    color:#047aed !important;
+}
+/* ANIMATIONS */
+@keyframes slideInFromLeft{
+
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideInFromRight{
+
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideInFromTop{
+
+    0%{
+        transform:translateY(-100%)
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideInFromBottom{
+
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateX(0);
+    }
 }
